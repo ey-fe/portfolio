@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eyuel Felek | Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="myportstyle.css">
+</head>
+<body>
+
+    <!-- SIDEBAR -->
+    <nav class="sidebar">
+        <h2 class="logo"><i class="ri-code-s-slash-line"></i> Eyuel</h2>
+        <ul>
+            <li data-section="home" class="active"><i class="ri-home-8-line"></i> Home</li>
+            <li data-section="about"><i class="ri-user-3-line"></i> About Me</li>
+            <li data-section="skills"><i class="ri-bar-chart-2-line"></i> Skills</li>
+            <li data-section="projects"><i class="ri-folder-open-line"></i> Projects</li>
+            <li data-section="contact"><i class="ri-contacts-book-line"></i> Contact</li>
+            <li data-section="feedback"><i class="ri-feedback-line"></i> Feedback</li>
+        </ul>
+    </nav>
+
+    <!-- MAIN CONTENT -->
+    <div class="content">
+
+        <!-- HOME -->
+        <section id="home" class="section visible">
+            <div class="center-box">
+                <img src="myphoto.jpg" id="profile-pic" alt="Eyuel Felek">
+                <h1><i class="ri-terminal-box-line"></i> Welcome to My Portfolio</h1>
+
+                <div class="social-icons">
+                    <a href="https://tiktok.com/@umeyu00" target="_blank"><i class="ri-tiktok-fill"></i> TikTok</a>
+                    <a href="https://wa.me/251901808245" target="_blank"><i class="ri-whatsapp-line"></i> WhatsApp</a>
+                    <a href="https://t.me/eyufelek" target="_blank"><i class="ri-telegram-line"></i> Telegram</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT -->
+        <section id="about" class="section">
+            <h2><i class="ri-information-line"></i> About Me</h2>
+            <p>I am a passionate Computer Science student with strong interest in Web Development, Java Programming, and Design.</p>
+
+            <div class="about-box">
+                <h3><i class="ri-book-open-line"></i> My Background</h3>
+                <p>I attended high school at <strong>Tiya Secondary and Preparatory School</strong>, Gurage Zone, Ethiopia.</p>
+                <p>By God's grace and my family's support, I joined university — my dream came true!</p>
+
+                <h3><i class="ri-graduation-cap-line"></i> University Journey</h3>
+                <p>Currently studying <strong>Computer Science</strong>. Excited to learn every day!</p>
+
+                <h3><i class="ri-rocket-line"></i> Goals & Dreams</h3>
+                <p>To become a full-stack web developer and build the official website for my high school.</p>
+            </div>
+
+            <button id="show-date-btn"><i class="ri-calendar-line"></i></button>
+            <p id="date-output"></p>
+        </section>
+
+        <!-- SKILLS -->
+        <section id="skills" class="section">
+            <h2><i class="ri-medal-line"></i> My Skills</h2>
+            <div class="skills-container">
+                <div class="skill-card"><h3><i class="ri-html5-line"></i> HTML</h3><div class="progress-bar"><div class="progress html"></div></div><p>70%</p></div>
+                <div class="skill-card"><h3><i class="ri-css3-line"></i> CSS</h3><div class="progress-bar"><div class="progress css"></div></div><p>60%</p></div>
+                <div class="skill-card"><h3><i class="ri-java-line"></i> Java</h3><div class="progress-bar"><div class="progress java"></div></div><p>75%</p></div>
+                <div class="skill-card"><h3><i class="ri-video-line"></i> Video Editing</h3><div class="progress-bar"><div class="progress video"></div></div><p>55%</p></div>
+                <div class="skill-card"><h3><i class="ri-global-line"></i> Web Dev</h3><div class="progress-bar"><div class="progress web"></div></div><p>65%</p></div>
+            </div>
+        </section>
+
+        <!-- PROJECTS -->
+        <section id="projects" class="section">
+            <div class="projects-header">
+                <h2><i class="ri-code-box-line"></i> My Projects</h2>
+                <p>Some of my best work so far</p>
+            </div>
+
+            <div class="projects-container">
+
+                <!-- PORTFOLIO PROJECT -->
+                <div class="project-card modern">
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/600x380/111/ffd700?text=Portfolio+Website" alt="Portfolio">
+                        <div class="project-overlay">
+                            <a href="https://github.com/ey-fe" target="_blank" class="overlay-btn github">
+                                <i class="ri-github-fill"></i> Code
+                            </a>
+                            <a href="#" class="overlay-btn live">
+                                <i class="ri-external-link-line"></i> Live Demo
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Personal Portfolio</h3>
+                        <p>Modern responsive portfolio with smooth animations (this site!)</p>
+                        <div class="project-tech"><span>HTML5</span><span>CSS3</span><span>JS</span></div>
+                        <p class="project-year">2025</p>
+                    </div>
+                </div>
+
+                <!-- CAFE MANAGEMENT SYSTEM -->
+                <div class="project-card modern">
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/600x380/222/ffd700?text=Cafe+System" alt="Cafe">
+                        <div class="project-overlay">
+                            <a href="https://github.com/ey-fe/cafe-management-system-java" target="_blank" class="overlay-btn github">
+                                <i class="ri-github-fill"></i> Code
+                            </a>
+                            <a href="#" class="overlay-btn live disabled">
+                                <i class="ri-computer-line"></i> Desktop App
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Cafe Management System</h3>
+                        <p>Java Swing app with real-time orders & file handling</p>
+                        <div class="project-tech"><span>Java</span><span>Swing</span><span>File I/O</span></div>
+                        <p class="project-year">2024</p>
+                    </div>
+                </div>
+
+                <!-- LIBRARY SYSTEM -->
+                <div class="project-card modern">
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/600x380/333/ffd700?text=Library+System" alt="Library">
+                        <div class="project-overlay">
+                            <a href="https://github.com/ey-fe" target="_blank" class="overlay-btn github">
+                                <i class="ri-github-fill"></i> Code
+                            </a>
+                            <a href="#" class="overlay-btn live disabled">
+                                <i class="ri-book-line"></i> Local App
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Library Management</h3>
+                        <p>Full OOP Java system with admin/user roles</p>
+                        <div class="project-tech"><span>Java OOP</span><span>Collections</span></div>
+                        <p class="project-year">2024</p>
+                    </div>
+                </div>
+
+                <!-- FUTURE PROJECT -->
+                <div class="project-card modern coming-soon">
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/600x380/111/999?text=School+Website" alt="School">
+                        <div class="project-overlay">
+                            <div class="coming-text"><i class="ri-time-line"></i> Coming Soon</div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Tiya School Website</h3>
+                        <p>Dream project: Official site for my high school</p>
+                        <div class="project-tech"><span>Full-Stack</span><span>PHP</span><span>MySQL</span></div>
+                        <p class="project-year">2025-2026</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section id="contact" class="section">
+            <h2><i class="ri-phone-line"></i> Contact Me</h2>
+            <div class="contact-list">
+                <p><i class="ri-telegram-line"></i> Telegram: <a href="https://t.me/eyufelek">@eyufelek</a></p>
+                <p><i class="ri-tiktok-fill"></i> TikTok: <a href="https://tiktok.com/@umeyu00">@umeyu00</a></p>
+                <p><i class="ri-phone-fill"></i> Phone: <a href="tel:+251901808245">+251 901 808 245</a></p>
+                <p><i class="ri-mail-line"></i> Email: <a href="mailto:eyuelfelek443@gmail.com">eyuelfelek443@gmail.com</a></p>
+            </div>
+        </section>
+
+        <!-- FEEDBACK -->
+        <section id="feedback" class="section">
+            <h2><i class="ri-message-3-line"></i> Send Feedback</h2>
+            <form action="https://formsubmit.co/eyuelfelek443@gmail.com" method="POST">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" rows="6" placeholder="Your message..." required></textarea>
+                <input type="submit" value="Send Message">
+            </form>
+        </section>
+
+    </div>
+
+    <script src="myportscript.js"></script>
+</body>
+</html>
