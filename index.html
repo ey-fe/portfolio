@@ -4,33 +4,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eyuel Felek | Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="stylesheet" href="myportstyle.css">
 </head>
 <body>
 
-    <!-- SIDEBAR -->
-    <nav class="sidebar">
-        <h2 class="logo"><i class="ri-code-s-slash-line"></i> Eyuel</h2>
-        <ul>
-            <li data-section="home" class="active"><i class="ri-home-8-line"></i> Home</li>
+    <!-- MENU BAR (Smart Responsive) -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <h2 class="logo"><i class="ri-code-s-slash-line"></i> Eyuel</h2>
+
+            <!-- Desktop Menu -->
+            <ul class="nav-menu desktop">
+                <li data-section="home" class="active"><i class="ri-home-8-line"></i> Home</li>
+                <li data-section="about"><i class="ri-user-3-line"></i> About Me</li>
+                <li data-section="skills"><i class="ri-bar-chart-2-line"></i> Skills</li>
+                <li data-section="projects"><i class="ri-folder-open-line"></i> Projects</li>
+                <li data-section="contact"><i class="ri-contacts-book-line"></i> Contact</li>
+                <li data-section="feedback"><i class="ri-feedback-line"></i> Feedback</li>
+            </ul>
+
+            <!-- Mobile Hamburger -->
+            <div class="hamburger">
+                <i class="ri-menu-3-line"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Fullscreen Menu -->
+    <div class="mobile-nav">
+        <div class="mobile-nav-header">
+            <h2 class="logo"><i class="ri-code-s-slash-line"></i> Eyuel</h2>
+            <i class="ri-close-line close-mobile"></i>
+        </div>
+        <ul class="nav-menu mobile">
+            <li data-section="home"><i class="ri-home-8-line"></i> Home</li>
             <li data-section="about"><i class="ri-user-3-line"></i> About Me</li>
             <li data-section="skills"><i class="ri-bar-chart-2-line"></i> Skills</li>
             <li data-section="projects"><i class="ri-folder-open-line"></i> Projects</li>
             <li data-section="contact"><i class="ri-contacts-book-line"></i> Contact</li>
             <li data-section="feedback"><i class="ri-feedback-line"></i> Feedback</li>
         </ul>
-    </nav>
+    </div>
 
     <!-- MAIN CONTENT -->
     <div class="content">
 
-        <!-- HOME -->
+        <!-- HOME (Professional layout) -->
         <section id="home" class="section visible">
             <div class="center-box">
                 <img src="myphoto.jpg" id="profile-pic" alt="Eyuel Felek">
-                <h1><i class="ri-terminal-box-line"></i> Welcome to My Portfolio</h1>
-
+                <h1>Eyuel Felek</h1>
+                <p class="subtitle"><i class="ri-terminal-box-line"></i> Computer Science Student | Aspiring Full-Stack Developer</p>
                 <div class="social-icons">
                     <a href="https://tiktok.com/@umeyu00" target="_blank"><i class="ri-tiktok-fill"></i> TikTok</a>
                     <a href="https://wa.me/251901808245" target="_blank"><i class="ri-whatsapp-line"></i> WhatsApp</a>
@@ -43,32 +69,46 @@
         <section id="about" class="section">
             <h2><i class="ri-information-line"></i> About Me</h2>
             <p>I am a passionate Computer Science student with strong interest in Web Development, Java Programming, and Design.</p>
-
             <div class="about-box">
                 <h3><i class="ri-book-open-line"></i> My Background</h3>
                 <p>I attended high school at <strong>Tiya Secondary and Preparatory School</strong>, Gurage Zone, Ethiopia.</p>
                 <p>By God's grace and my family's support, I joined university — my dream came true!</p>
-
                 <h3><i class="ri-graduation-cap-line"></i> University Journey</h3>
                 <p>Currently studying <strong>Computer Science</strong>. Excited to learn every day!</p>
-
                 <h3><i class="ri-rocket-line"></i> Goals & Dreams</h3>
                 <p>To become a full-stack web developer and build the official website for my high school.</p>
             </div>
-
-            <button id="show-date-btn"><i class="ri-calendar-line"></i></button>
-            <p id="date-output"></p>
         </section>
 
         <!-- SKILLS -->
         <section id="skills" class="section">
             <h2><i class="ri-medal-line"></i> My Skills</h2>
             <div class="skills-container">
-                <div class="skill-card"><h3><i class="ri-html5-line"></i> HTML</h3><div class="progress-bar"><div class="progress html"></div></div><p>70%</p></div>
-                <div class="skill-card"><h3><i class="ri-css3-line"></i> CSS</h3><div class="progress-bar"><div class="progress css"></div></div><p>60%</p></div>
-                <div class="skill-card"><h3><i class="ri-java-line"></i> Java</h3><div class="progress-bar"><div class="progress java"></div></div><p>75%</p></div>
-                <div class="skill-card"><h3><i class="ri-video-line"></i> Video Editing</h3><div class="progress-bar"><div class="progress video"></div></div><p>55%</p></div>
-                <div class="skill-card"><h3><i class="ri-global-line"></i> Web Dev</h3><div class="progress-bar"><div class="progress web"></div></div><p>65%</p></div>
+                <div class="skill-card">
+                    <h3><i class="ri-html5-line"></i> HTML</h3>
+                    <div class="progress-bar"><div class="progress html"></div></div><p>70%</p>
+                    <p class="skill-description">Proficient in semantic markup, creating structured and accessible web pages.</p>
+                </div>
+                <div class="skill-card">
+                    <h3><i class="ri-css3-line"></i> CSS</h3>
+                    <div class="progress-bar"><div class="progress css"></div></div><p>60%</p>
+                    <p class="skill-description">Skilled in modern styling, layouts (Flexbox/Grid), and responsive design.</p>
+                </div>
+                <div class="skill-card">
+                    <h3><i class="ri-java-line"></i> Java</h3>
+                    <div class="progress-bar"><div class="progress java"></div></div><p>75%</p>
+                    <p class="skill-description">Strong in OOP concepts, building desktop applications with Swing and file handling.</p>
+                </div>
+                <div class="skill-card">
+                    <h3><i class="ri-video-line"></i> Video Editing</h3>
+                    <div class="progress-bar"><div class="progress video"></div></div><p>55%</p>
+                    <p class="skill-description">Experienced in editing engaging short videos for social media platforms.</p>
+                </div>
+                <div class="skill-card">
+                    <h3><i class="ri-global-line"></i> Web Dev</h3>
+                    <div class="progress-bar"><div class="progress web"></div></div><p>65%</p>
+                    <p class="skill-description">Comfortable building full responsive websites using HTML, CSS, and JavaScript.</p>
+                </div>
             </div>
         </section>
 
@@ -78,20 +118,13 @@
                 <h2><i class="ri-code-box-line"></i> My Projects</h2>
                 <p>Some of my best work so far</p>
             </div>
-
             <div class="projects-container">
-
-                <!-- PORTFOLIO PROJECT -->
                 <div class="project-card modern">
                     <div class="project-image">
                         <img src="https://via.placeholder.com/600x380/111/ffd700?text=Portfolio+Website" alt="Portfolio">
                         <div class="project-overlay">
-                            <a href="https://github.com/ey-fe" target="_blank" class="overlay-btn github">
-                                <i class="ri-github-fill"></i> Code
-                            </a>
-                            <a href="#" class="overlay-btn live">
-                                <i class="ri-external-link-line"></i> Live Demo
-                            </a>
+                            <a href="https://github.com/ey-fe" target="_blank" class="overlay-btn github"><i class="ri-github-fill"></i> Code</a>
+                            <a href="#" class="overlay-btn live"><i class="ri-external-link-line"></i> Live Demo</a>
                         </div>
                     </div>
                     <div class="project-info">
@@ -101,18 +134,12 @@
                         <p class="project-year">2025</p>
                     </div>
                 </div>
-
-                <!-- CAFE MANAGEMENT SYSTEM -->
                 <div class="project-card modern">
                     <div class="project-image">
                         <img src="https://via.placeholder.com/600x380/222/ffd700?text=Cafe+System" alt="Cafe">
                         <div class="project-overlay">
-                            <a href="https://github.com/ey-fe/cafe-management-system-java" target="_blank" class="overlay-btn github">
-                                <i class="ri-github-fill"></i> Code
-                            </a>
-                            <a href="#" class="overlay-btn live disabled">
-                                <i class="ri-computer-line"></i> Desktop App
-                            </a>
+                            <a href="https://github.com/ey-fe/cafe-management-system-java" target="_blank" class="overlay-btn github"><i class="ri-github-fill"></i> Code</a>
+                            <a href="#" class="overlay-btn live disabled"><i class="ri-computer-line"></i> Desktop App</a>
                         </div>
                     </div>
                     <div class="project-info">
@@ -122,18 +149,12 @@
                         <p class="project-year">2024</p>
                     </div>
                 </div>
-
-                <!-- LIBRARY SYSTEM -->
                 <div class="project-card modern">
                     <div class="project-image">
                         <img src="https://via.placeholder.com/600x380/333/ffd700?text=Library+System" alt="Library">
                         <div class="project-overlay">
-                            <a href="https://github.com/ey-fe" target="_blank" class="overlay-btn github">
-                                <i class="ri-github-fill"></i> Code
-                            </a>
-                            <a href="#" class="overlay-btn live disabled">
-                                <i class="ri-book-line"></i> Local App
-                            </a>
+                            <a href="https://github.com/ey-fe" target="_blank" class="overlay-btn github"><i class="ri-github-fill"></i> Code</a>
+                            <a href="#" class="overlay-btn live disabled"><i class="ri-book-line"></i> Local App</a>
                         </div>
                     </div>
                     <div class="project-info">
@@ -143,8 +164,6 @@
                         <p class="project-year">2024</p>
                     </div>
                 </div>
-
-                <!-- FUTURE PROJECT -->
                 <div class="project-card modern coming-soon">
                     <div class="project-image">
                         <img src="https://via.placeholder.com/600x380/111/999?text=School+Website" alt="School">
@@ -159,7 +178,6 @@
                         <p class="project-year">2025-2026</p>
                     </div>
                 </div>
-
             </div>
         </section>
 
